@@ -127,4 +127,4 @@ const warning = (key) => {
     return undefined;
 };
 
-run().catch(console.log);
+run()
