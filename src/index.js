@@ -32,6 +32,8 @@ const run = async () => {
         }).stdout;
         // get local, remote branch list
         const [localArr, remoteArr] = split(stringToArray(branches));
+        // localStr：以空格隔开的各个分支
+        // remoteStr：以空格隔开的各个远端分支
         const [localStr, remoteStr] = getStringBranches(
             [localArr, remoteArr],
             owner,
